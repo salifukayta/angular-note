@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {FormsModule} from '@angular/forms';
+import { AjouterNoteComponent } from './ajouter-note/ajouter-note.component';
+import { AfficherComponent } from './afficher/afficher.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AjouterNoteComponent,
+    AfficherComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

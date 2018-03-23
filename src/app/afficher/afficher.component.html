@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let note of listNote" (click)="modifierNote(note)" class.selected="note">
+    {{note.message}}, {{note.id}}
+   <!-- <button (click)="supprimerNote(note)">Supprimer</button>-->
+  </li>
+
+
+</ul>
